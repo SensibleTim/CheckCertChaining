@@ -17,7 +17,6 @@ Results
 Certificate chaining results are output to a file at $env:USERPROFILE\certchainingchecks.txt 
 
 Note
-If no certificates fail chaining then no results will be reported in the output file.
 Expired or not yet valid certificates are excluded from chaining. 
 
 http://technet.microsoft.com/en-us/library/cc700843.aspx
