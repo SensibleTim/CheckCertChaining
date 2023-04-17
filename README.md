@@ -24,23 +24,42 @@ http://technet.microsoft.com/en-us/library/cc700843.aspx
 http://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509chainstatusflags(v=vs.110).aspx 
 
 Sample result
-Certificate Number               : 3
+Certificate Number               : 3	
+
 Friendly Name                    : [None]
+
 Path                             : CurrentUser
+
 Store                            : My
+
 Has Private Key                  : True
+
 Serial Number                    : <sample>
+	
 Thumbprint                       : <sample>
+	
 Issuer                           : O=test2, OU=testCA
+	
 Not Before                       : 4/16/2022 7:40:23 AM
+	
 Not After                        : 4/15/2028 7:40:23 AM
+	
 Subject Name                     : CN=*.test, O=test2, OU=testCA
+	
 Subject Alternative Name         : DNS Name=*.test.com
+	
 Key Usage                        : Digital Signature, Key Encipherment, Data Encipherment (b0)
+	
 Enhanced Key Usage               : Server Authentication (1.3.6.1.5.5.7.3.1)
+	
 Certificate Template Information : [None]
-RevocationStatusUnknown          : The revocation function was unable to check revocation for the certificate.                                   
+	
+RevocationStatusUnknown          : The revocation function was unable to check revocation for the certificate.     
+	
 AIA URLs                         : [None]
+	
 CDP URLs                         : [None]
+	
 OCSP URLs                        : [None]
+	
 
