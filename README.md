@@ -9,20 +9,24 @@ The certificates are found using the integrated PowerShell capability of seeing 
 
 
 How to use the script
-
 The script can be used to chain individual certificates in accesible certificate stores which can be useful when testing a certificate to be used in a service. Warning: Export/import the certificates to be tested with public keys only. The private key is not necessary for chaining.
 The script can be called with an optional parameter of a thumbprint in case you know which certificate you'd like to test.
 If no thumbprint is specified The script uses the interactive context of the signed in user to query the certificate stores and do the chaining.
 The script must be ran from an elevated PowerShell prompt.
 
+Example to check validity of all certificates:
+.\CheckCertChaining -ChainAll $true
+
+Example to check validity of one certificate:
+.\CheckCertChaining -ChainOne $true -Thumbprint '<thumbprint value>'
+
 Results
-Certificate chaining results are output to a file at $env:USERPROFILE\certchainingchecks.txt 
+Results for checking all will be output to a file at $env:USERPROFILE\CertChainingResults.txt
+Results for checking one certificate will be output to a file at  $env:USERPROFILE\CheckSingleCertChaining.txt
 
 Note
 Expired or not yet valid certificates are excluded from chaining. 
 
-http://technet.microsoft.com/en-us/library/cc700843.aspx
-http://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509chainstatusflags(v=vs.110).aspx 
 
 Sample result
 Certificate Number               : 3	
